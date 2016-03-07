@@ -9,7 +9,7 @@ categories:
 
 ## code test: verilog
 
-``` verilog
+```
 always @(posedge hclk) begin : ID_MEM_EMPTY
     if(id_wpt != id_rpt)  id_mem_empty <= `TD 0;
     else id_mem_empty <=  `TD 1;
@@ -18,7 +18,7 @@ end
 
 ## code test: tcl
 
-``` tcl
+```
 foreach f [glob "*${file_name}*"] {
     puts [file normalize $f]
 }
@@ -26,7 +26,7 @@ foreach f [glob "*${file_name}*"] {
 
 ## code test: vim
 
-``` vim
+```
 function! GotoFileWithLineNum()
     " exclude comma from file name search
     " change the 'isfname' option temporarily to pick up file name in ncverilog MSG
