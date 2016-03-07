@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://hanjingfei.github.io/atom.xml" rel="self"/>
   <link href="http://hanjingfei.github.io/"/>
-  <updated>2016-03-07T13:55:54+08:00</updated>
+  <updated>2016-03-07T17:43:20+08:00</updated>
   <id>http://hanjingfei.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,5 +12,96 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[First_post]]></title>
+    <link href="http://hanjingfei.github.io/blog/2016/03/07/first-post/"/>
+    <updated>2016-03-07T14:08:32+08:00</updated>
+    <id>http://hanjingfei.github.io/blog/2016/03/07/first-post</id>
+    <content type="html"><![CDATA[<h1>测试</h1>
+
+<h2>代码效果：verilog</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>always @(posedge hclk) begin : ID_MEM_EMPTY
+</span><span class='line'>    if(id_wpt != id_rpt)  id_mem_empty &lt;= `TD 0;
+</span><span class='line'>    else id_mem_empty &lt;=  `TD 1;
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>代码效果：vimrc</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>function! GotoFileWithLineNum()
+</span><span class='line'>    " exclude comma from file name search
+</span><span class='line'>    " change the 'isfname' option temporarily to pick up file name in ncverilog MSG
+</span><span class='line'>    let bak_isfname = &isfname
+</span><span class='line'>    set isfname=@,48-57,/,.,-,_,+,#,$,%,~,="
+</span><span class='line'>    " filename under the cursor 
+</span><span class='line'>    let file_name = expand('&lt;cfile&gt;')
+</span><span class='line'>    if !strlen(file_name)
+</span><span class='line'>        echo 'NO FILE UNDER CURSOR'
+</span><span class='line'>        return
+</span><span class='line'>    endif
+</span><span class='line'>
+</span><span class='line'>    " look for a line number separated by any :,"&lt;space&gt; 
+</span><span class='line'>    if search('\%#\f*[:, "]*\zs[0-9]\+')
+</span><span class='line'>        " change the 'iskeyword' option temporarily to pick up just numbers 
+</span><span class='line'>        let temp = &iskeyword
+</span><span class='line'>        set iskeyword=48-57
+</span><span class='line'>        let line_number = expand('&lt;cword&gt;')
+</span><span class='line'>        exe 'set iskeyword=' . temp
+</span><span class='line'>    endif
+</span><span class='line'>
+</span><span class='line'>    exe 'set isfname=' . bak_isfname
+</span><span class='line'>    " edit the file 
+</span><span class='line'>    exe 'e '.file_name
+</span><span class='line'>
+</span><span class='line'>    " if there is a line number, go to it 
+</span><span class='line'>    if exists('line_number')
+</span><span class='line'>        exe line_number
+</span><span class='line'>    endif
+</span><span class='line'>endfunction
+</span><span class='line'>
+</span><span class='line'>map gf :call GotoFileWithLineNum()&lt;CR&gt;
+</span><span class='line'>map gsf :sp&lt;CR&gt;:call GotoFileWithLineNum()&lt;CR&gt;</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
 </feed>
