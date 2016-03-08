@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://hanjingfei.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: Jingfei's Blog
+subtitle: IC Design & Book Review & Tools.
+author: Jingfei Han
 simple_search: https://www.google.com/search
-description:
+description: i cAN sLEEP oN cHAIR
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: icsoc@qq.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
