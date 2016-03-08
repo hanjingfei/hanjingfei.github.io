@@ -4,7 +4,7 @@
   <title><![CDATA[Jingfei's Blog]]></title>
   <link href="http://hanjingfei.github.io/atom.xml" rel="self"/>
   <link href="http://hanjingfei.github.io/"/>
-  <updated>2016-03-08T10:56:06+08:00</updated>
+  <updated>2016-03-08T18:00:31+08:00</updated>
   <id>http://hanjingfei.github.io/</id>
   <author>
     <name><![CDATA[Jingfei Han]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Plugin Codeblock]]></title>
+    <link href="http://hanjingfei.github.io/blog/2016/03/08/plugin-codeblock/"/>
+    <updated>2016-03-08T17:42:52+08:00</updated>
+    <id>http://hanjingfei.github.io/blog/2016/03/08/plugin-codeblock</id>
+    <content type="html"><![CDATA[<h2>Plugin Effect: Code Block</h2>
+
+<figure class='code'><figcaption><span>intital example </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>initial begin
+</span><span class='line'>    clkn_rstn   = 0;
+</span><span class='line'>    repeat(10)@(posedge clkn);
+</span><span class='line'>    #1;
+</span><span class='line'>    clkn_rstn   = 1;
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[First_post]]></title>

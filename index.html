@@ -9,11 +9,14 @@
   <meta name="author" content="Jingfei Han">
 
   
-  <meta name="description" content="Test code test: verilog 1
+  <meta name="description" content="Plugin Effect: Code Block intital example 1
 2
 3
 4
-always @(posedge hclk) begin : ID_MEM_EMPTY if(id_wpt != id_rpt) id_mem_empty &lt;= `TD 0; else id_mem_empty &lt;= ` &hellip;">
+5
+6
+initial begin clkn_rstn = 0; repeat(10)@(posedge clkn); #1; clkn_rstn = 1;
+end ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,6 +72,50 @@ always @(posedge hclk) begin : ID_MEM_EMPTY if(id_wpt != id_rpt) id_mem_empty &l
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/03/08/plugin-codeblock/">Plugin Codeblock</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-03-08T17:42:52+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:42 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Plugin Effect: Code Block</h2>
+
+<figure class='code'><figcaption><span>intital example </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>initial begin
+</span><span class='line'>    clkn_rstn   = 0;
+</span><span class='line'>    repeat(10)@(posedge clkn);
+</span><span class='line'>    #1;
+</span><span class='line'>    clkn_rstn   = 1;
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -202,6 +249,10 @@ always @(posedge hclk) begin : ID_MEM_EMPTY if(id_wpt != id_rpt) id_mem_empty &l
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/03/08/plugin-codeblock/">Plugin Codeblock</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2016/03/07/first-post/">First_post</a>
