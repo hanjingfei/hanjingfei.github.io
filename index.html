@@ -175,12 +175,9 @@ initial begin clkn_rstn = 0; repeat(10)@(posedge clkn); # &hellip;">
 
 
 <p>The source parts are displayed by <code>{% raw %}</code> and
- <code>{\% endraw %}</code> which escape liquid tags.</p>
+ <code>{% endraw %}</code> which escape liquid tags.</p>
 
-<p>Good: This inline <code>{% raw %}</code> tag is escaped.<br/>
-Bad : This inline <code>{\% endraw %}</code> tag is escaped.</p>
-
-<figure class='code'><figcaption><span>Liquid Escape Syntax </span></figcaption>
+<figure class='code'><figcaption><span>Liquid Escape Syntax in codeblock </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -191,6 +188,17 @@ Bad : This inline <code>{\% endraw %}</code> tag is escaped.</p>
 </span><span class='line'>some code here
 </span><span class='line'>&#123;% endraw %&#125;
 </span><span class='line'>&#123;% endcodeblock %&#125;</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<figure class='code'><figcaption><span>Liquid Escape Syntax inline </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{{ "{% this is your liquid syntax and not bein processed by octopress. It will show in your post as a source code." }}%} 
+</span><span class='line'>or `{{ "{% raw " }}%}` 
+</span><span class='line'>or `{{ "{% endraw " }}%}`</span></code></pre></td></tr></table></div></figure>
 
 
 <p></p>
