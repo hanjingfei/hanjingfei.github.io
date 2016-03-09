@@ -9,14 +9,13 @@
   <meta name="author" content="Jingfei Han">
 
   
-  <meta name="description" content="Plugin Effect: Code Block intital example 1
+  <meta name="description" content="Code Highlight by using &ldquo;Code Block&rdquo; display effect intital example 1
 2
 3
 4
 5
 6
-initial begin clkn_rstn = 0; repeat(10)@(posedge clkn); #1; clkn_rstn = 1;
-end ">
+initial begin clkn_rstn = 0; repeat(10)@(posedge clkn); # &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,7 +77,7 @@ end ">
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2016/03/08/plugin-codeblock/">Plugin Codeblock</a></h1>
+      <h1 class="entry-title"><a href="/blog/2016/03/08/plugin-codeblock/">Plugins of Code Highlighting</a></h1>
     
     
       <p class="meta">
@@ -94,7 +93,9 @@ end ">
   </header>
 
 
-  <div class="entry-content"><h2>Plugin Effect: Code Block</h2>
+  <div class="entry-content"><h2>Code Highlight by using &ldquo;Code Block&rdquo;</h2>
+
+<h3>display effect</h3>
 
 <figure class='code'><figcaption><span>intital example </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -103,13 +104,96 @@ end ">
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>initial begin
+</pre></td><td class='code'><pre><code class='verilog'><span class='line'><span class="k">initial</span> <span class="k">begin</span>
+</span><span class='line'>    <span class="n">clkn_rstn</span>   <span class="o">=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">repeat</span><span class="p">(</span><span class="mh">10</span><span class="p">)@(</span><span class="k">posedge</span> <span class="n">clkn</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">#</span><span class="mh">1</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">clkn_rstn</span>   <span class="o">=</span> <span class="mh">1</span><span class="p">;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>source</h3>
+
+<figure class='code'><figcaption><span>Code Block Syntax </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{% codeblock lang:verilog intital example %}
+</span><span class='line'>initial begin
 </span><span class='line'>    clkn_rstn   = 0;
 </span><span class='line'>    repeat(10)@(posedge clkn);
 </span><span class='line'>    #1;
 </span><span class='line'>    clkn_rstn   = 1;
-</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>end
+</span><span class='line'>{% endcodeblock %}</span></code></pre></td></tr></table></div></figure>
 
+
+<h2>Code Highlight by using &ldquo;Backtick Code Blocks&rdquo;</h2>
+
+<h3>display effect</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='verilog'><span class='line'><span class="k">initial</span> <span class="k">begin</span>
+</span><span class='line'>    <span class="n">clkn_rstn</span>   <span class="o">=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">repeat</span><span class="p">(</span><span class="mh">10</span><span class="p">)@(</span><span class="k">posedge</span> <span class="n">clkn</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">#</span><span class="mh">1</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">clkn_rstn</span>   <span class="o">=</span> <span class="mh">1</span><span class="p">;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>source</h3>
+
+<figure class='code'><figcaption><span>Backtick Code Blocks Syntax </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>``` verilog
+</span><span class='line'>  initial begin
+</span><span class='line'>      clkn_rstn   = 0;
+</span><span class='line'>      repeat(10)@(posedge clkn);
+</span><span class='line'>      #1;
+</span><span class='line'>      clkn_rstn   = 1;
+</span><span class='line'>  end  
+</span><span class='line'>```</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The source parts are displayed by <code>{% raw %}</code> and
+ <code>{\% endraw %}</code> which escape liquid tags.</p>
+
+<p>Good: This inline <code>{% raw %}</code> tag is escaped.<br/>
+Bad : This inline <code>{\% endraw %}</code> tag is escaped.</p>
+
+<figure class='code'><figcaption><span>Liquid Escape Syntax </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&#123;% codeblock %&#125;
+</span><span class='line'>&#123;% raw %&#125;
+</span><span class='line'>some code here
+</span><span class='line'>&#123;% endraw %&#125;
+</span><span class='line'>&#123;% endcodeblock %&#125;</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
 </div>
   
   
@@ -138,33 +222,35 @@ end ">
   </header>
 
 
-  <div class="entry-content"><h1>Test</h1>
+  <div class="entry-content"><h2>Code Highlight by Backtick Code Block</h2>
 
-<h2>code test: verilog</h2>
+<h3>verilog</h3>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>always @(posedge hclk) begin : ID_MEM_EMPTY
-</span><span class='line'>    if(id_wpt != id_rpt)  id_mem_empty &lt;= `TD 0;
-</span><span class='line'>    else id_mem_empty &lt;=  `TD 1;
-</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class='verilog'><span class='line'><span class="k">always</span> <span class="p">@(</span><span class="k">posedge</span> <span class="n">hclk</span><span class="p">)</span> <span class="k">begin</span> <span class="o">:</span> <span class="no">ID_MEM_EMPTY</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="n">id_wpt</span> <span class="o">!=</span> <span class="n">id_rpt</span><span class="p">)</span>  <span class="n">id_mem_empty</span> <span class="o">&lt;=</span> <span class="no">`TD</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">else</span> <span class="n">id_mem_empty</span> <span class="o">&lt;=</span>  <span class="no">`TD</span> <span class="mh">1</span><span class="p">;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
-<h2>code test: tcl</h2>
+<h3>tcl</h3>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>foreach f [glob "*${file_name}*"] {
-</span><span class='line'>    puts [file normalize $f]
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class='tcl'><span class='line'><span class="k">foreach</span> f <span class="k">[</span><span class="nb">glob</span> <span class="s2">&quot;*${file_name}*&quot;</span><span class="k">]</span> <span class="k">{</span>
+</span><span class='line'>    <span class="nb">puts</span> <span class="k">[</span><span class="nb">file</span> normalize <span class="nv">$f</span><span class="k">]</span>
+</span><span class='line'><span class="k">}</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
-<h2>code test: vim</h2>
+<h3>vim</h3>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -197,39 +283,40 @@ end ">
 <span class='line-number'>31</span>
 <span class='line-number'>32</span>
 <span class='line-number'>33</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>function! GotoFileWithLineNum()
-</span><span class='line'>    " exclude comma from file name search
-</span><span class='line'>    " change the 'isfname' option temporarily to pick up file name in ncverilog MSG
-</span><span class='line'>    let bak_isfname = &isfname
-</span><span class='line'>    set isfname=@,48-57,/,.,-,_,+,#,$,%,~,="
-</span><span class='line'>    " filename under the cursor 
-</span><span class='line'>    let file_name = expand('&lt;cfile&gt;')
-</span><span class='line'>    if !strlen(file_name)
-</span><span class='line'>        echo 'NO FILE UNDER CURSOR'
-</span><span class='line'>        return
-</span><span class='line'>    endif
+</pre></td><td class='code'><pre><code class='vim'><span class='line'><span class="k">function</span><span class="p">!</span> GotoFileWithLineNum<span class="p">()</span>
+</span><span class='line'><span class="c">    &quot; exclude comma from file name search</span>
+</span><span class='line'><span class="c">    &quot; change the &#39;isfname&#39; option temporarily to pick up file name in ncverilog MSG</span>
+</span><span class='line'>    <span class="k">let</span> bak_isfname <span class="p">=</span> &amp;<span class="nb">isfname</span>
+</span><span class='line'>    <span class="k">set</span> <span class="nb">isfname</span><span class="p">=</span>@<span class="p">,</span><span class="m">48-57</span><span class="p">,</span>/<span class="p">,</span>.<span class="p">,-,</span>_<span class="p">,+,</span>#<span class="p">,</span>$<span class="p">,</span>%<span class="p">,~,=</span>&quot;
+</span><span class='line'><span class="c">    &quot; filename under the cursor </span>
+</span><span class='line'>    <span class="k">let</span> file_name <span class="p">=</span> expand<span class="p">(</span><span class="s1">&#39;&lt;cfile&gt;&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">!</span>strlen<span class="p">(</span>file_name<span class="p">)</span>
+</span><span class='line'>        echo <span class="s1">&#39;NO FILE UNDER CURSOR&#39;</span>
+</span><span class='line'>        <span class="k">return</span>
+</span><span class='line'>    <span class="k">endif</span>
 </span><span class='line'>
-</span><span class='line'>    " look for a line number separated by any :,"&lt;space&gt; 
-</span><span class='line'>    if search('\%#\f*[:, "]*\zs[0-9]\+')
-</span><span class='line'>        " change the 'iskeyword' option temporarily to pick up just numbers 
-</span><span class='line'>        let temp = &iskeyword
-</span><span class='line'>        set iskeyword=48-57
-</span><span class='line'>        let line_number = expand('&lt;cword&gt;')
-</span><span class='line'>        exe 'set iskeyword=' . temp
-</span><span class='line'>    endif
+</span><span class='line'><span class="c">    &quot; look for a line number separated by any :,&quot;&lt;space&gt; </span>
+</span><span class='line'>    <span class="k">if</span> search<span class="p">(</span><span class="s1">&#39;\%#\f*[:, &quot;]*\zs[0-9]\+&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="c">        &quot; change the &#39;iskeyword&#39; option temporarily to pick up just numbers </span>
+</span><span class='line'>        <span class="k">let</span> temp <span class="p">=</span> &amp;<span class="nb">iskeyword</span>
+</span><span class='line'>        <span class="k">set</span> <span class="nb">iskeyword</span><span class="p">=</span><span class="m">48-57</span>
+</span><span class='line'>        <span class="k">let</span> line_number <span class="p">=</span> expand<span class="p">(</span><span class="s1">&#39;&lt;cword&gt;&#39;</span><span class="p">)</span>
+</span><span class='line'>        exe <span class="s1">&#39;set iskeyword=&#39;</span> . temp
+</span><span class='line'>    <span class="k">endif</span>
 </span><span class='line'>
-</span><span class='line'>    exe 'set isfname=' . bak_isfname
-</span><span class='line'>    " edit the file 
-</span><span class='line'>    exe 'e '.file_name
+</span><span class='line'>    exe <span class="s1">&#39;set isfname=&#39;</span> . bak_isfname
+</span><span class='line'><span class="c">    &quot; edit the file </span>
+</span><span class='line'>    exe <span class="s1">&#39;e &#39;</span>.file_name
 </span><span class='line'>
-</span><span class='line'>    " if there is a line number, go to it 
-</span><span class='line'>    if exists('line_number')
+</span><span class='line'><span class="c">    &quot; if there is a line number, go to it </span>
+</span><span class='line'>    <span class="k">if</span> exists<span class="p">(</span><span class="s1">&#39;line_number&#39;</span><span class="p">)</span>
 </span><span class='line'>        exe line_number
-</span><span class='line'>    endif
-</span><span class='line'>endfunction
+</span><span class='line'>    <span class="k">endif</span>
+</span><span class='line'><span class="k">endfunction</span>
 </span><span class='line'>
-</span><span class='line'>map gf :call GotoFileWithLineNum()&lt;CR&gt;
-</span><span class='line'>map gsf :sp&lt;CR&gt;:call GotoFileWithLineNum()&lt;CR&gt;</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>map gf :<span class="k">call</span> GotoFileWithLineNum<span class="p">()&lt;</span>CR<span class="p">&gt;</span>
+</span><span class='line'>map gsf :<span class="k">sp</span><span class="p">&lt;</span>CR<span class="p">&gt;</span>:<span class="k">call</span> GotoFileWithLineNum<span class="p">()&lt;</span>CR<span class="p">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
 
 </div>
   
@@ -251,7 +338,7 @@ end ">
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2016/03/08/plugin-codeblock/">Plugin Codeblock</a>
+        <a href="/blog/2016/03/08/plugin-codeblock/">Plugins of Code Highlighting</a>
       </li>
     
       <li class="post">
@@ -259,6 +346,35 @@ end ">
       </li>
     
   </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/hanjingfei">@hanjingfei</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'hanjingfei',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 
@@ -283,16 +399,6 @@ end ">
 
 
 
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
 
 
 
