@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Jingfei's Blog</title>
+  <title>Plugins of Code Highlighting - Jingfei's Blog</title>
   <meta name="author" content="Jingfei Han">
 
   
@@ -24,7 +24,7 @@ initial begin clkn_rstn = 0; repeat(10)@(posedge clkn); # &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://hanjingfei.github.io/">
+  <link rel="canonical" href="http://hanjingfei.github.io/blog/2016/03/08/plugin-codeblock/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Jingfei's Blog" type="application/atom+xml">
@@ -69,15 +69,12 @@ initial begin clkn_rstn = 0; repeat(10)@(posedge clkn); # &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2016/03/08/plugin-codeblock/">Plugins of Code Highlighting</a></h1>
+      <h1 class="entry-title">Plugins of Code Highlighting</h1>
     
     
       <p class="meta">
@@ -93,7 +90,7 @@ initial begin clkn_rstn = 0; repeat(10)@(posedge clkn); # &hellip;">
   </header>
 
 
-  <div class="entry-content"><h2>Code Highlight by using &ldquo;Code Block&rdquo;</h2>
+<div class="entry-content"><h2>Code Highlight by using &ldquo;Code Block&rdquo;</h2>
 
 <h3>display effect</h3>
 
@@ -203,142 +200,64 @@ initial begin clkn_rstn = 0; repeat(10)@(posedge clkn); # &hellip;">
 
 <p></p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jingfei Han</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2016-03-08T17:42:52+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:42 pm</span></time>
+      
+
+
+    </p>
     
-      <h1 class="entry-title"><a href="/blog/2016/03/07/first-post/">First_post</a></h1>
+      <div class="sharing">
+  
+  
+  
+</div>
+
     
-    
-      <p class="meta">
-        
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2016/03/07/first-post/" title="Previous Post: first_post">&laquo; first_post</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
+  <section>
+	  <!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="/blog/2016/03/08/plugin-codeblock" data-title="plugins of code highlighting" data-url="http://hanjingfei.github.io/blog/2016/03/08/plugin-codeblock/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"hanjingfei"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
 
-
-
-<time class='entry-date' datetime='2016-03-07T14:08:32+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:08 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Code Highlight by Backtick Code Block</h2>
-
-<h3>verilog</h3>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='verilog'><span class='line'><span class="k">always</span> <span class="p">@(</span><span class="k">posedge</span> <span class="n">hclk</span><span class="p">)</span> <span class="k">begin</span> <span class="o">:</span> <span class="no">ID_MEM_EMPTY</span>
-</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="n">id_wpt</span> <span class="o">!=</span> <span class="n">id_rpt</span><span class="p">)</span>  <span class="n">id_mem_empty</span> <span class="o">&lt;=</span> <span class="no">`TD</span> <span class="mh">0</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">else</span> <span class="n">id_mem_empty</span> <span class="o">&lt;=</span>  <span class="no">`TD</span> <span class="mh">1</span><span class="p">;</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>tcl</h3>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='tcl'><span class='line'><span class="k">foreach</span> f <span class="k">[</span><span class="nb">glob</span> <span class="s2">&quot;*${file_name}*&quot;</span><span class="k">]</span> <span class="k">{</span>
-</span><span class='line'>    <span class="nb">puts</span> <span class="k">[</span><span class="nb">file</span> normalize <span class="nv">$f</span><span class="k">]</span>
-</span><span class='line'><span class="k">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>vim</h3>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-</pre></td><td class='code'><pre><code class='vim'><span class='line'><span class="k">function</span><span class="p">!</span> GotoFileWithLineNum<span class="p">()</span>
-</span><span class='line'><span class="c">    &quot; exclude comma from file name search</span>
-</span><span class='line'><span class="c">    &quot; change the &#39;isfname&#39; option temporarily to pick up file name in ncverilog MSG</span>
-</span><span class='line'>    <span class="k">let</span> bak_isfname <span class="p">=</span> &amp;<span class="nb">isfname</span>
-</span><span class='line'>    <span class="k">set</span> <span class="nb">isfname</span><span class="p">=</span>@<span class="p">,</span><span class="m">48-57</span><span class="p">,</span>/<span class="p">,</span>.<span class="p">,-,</span>_<span class="p">,+,</span>#<span class="p">,</span>$<span class="p">,</span>%<span class="p">,~,=</span>&quot;
-</span><span class='line'><span class="c">    &quot; filename under the cursor </span>
-</span><span class='line'>    <span class="k">let</span> file_name <span class="p">=</span> expand<span class="p">(</span><span class="s1">&#39;&lt;cfile&gt;&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="k">if</span> <span class="p">!</span>strlen<span class="p">(</span>file_name<span class="p">)</span>
-</span><span class='line'>        echo <span class="s1">&#39;NO FILE UNDER CURSOR&#39;</span>
-</span><span class='line'>        <span class="k">return</span>
-</span><span class='line'>    <span class="k">endif</span>
-</span><span class='line'>
-</span><span class='line'><span class="c">    &quot; look for a line number separated by any :,&quot;&lt;space&gt; </span>
-</span><span class='line'>    <span class="k">if</span> search<span class="p">(</span><span class="s1">&#39;\%#\f*[:, &quot;]*\zs[0-9]\+&#39;</span><span class="p">)</span>
-</span><span class='line'><span class="c">        &quot; change the &#39;iskeyword&#39; option temporarily to pick up just numbers </span>
-</span><span class='line'>        <span class="k">let</span> temp <span class="p">=</span> &amp;<span class="nb">iskeyword</span>
-</span><span class='line'>        <span class="k">set</span> <span class="nb">iskeyword</span><span class="p">=</span><span class="m">48-57</span>
-</span><span class='line'>        <span class="k">let</span> line_number <span class="p">=</span> expand<span class="p">(</span><span class="s1">&#39;&lt;cword&gt;&#39;</span><span class="p">)</span>
-</span><span class='line'>        exe <span class="s1">&#39;set iskeyword=&#39;</span> . temp
-</span><span class='line'>    <span class="k">endif</span>
-</span><span class='line'>
-</span><span class='line'>    exe <span class="s1">&#39;set isfname=&#39;</span> . bak_isfname
-</span><span class='line'><span class="c">    &quot; edit the file </span>
-</span><span class='line'>    exe <span class="s1">&#39;e &#39;</span>.file_name
-</span><span class='line'>
-</span><span class='line'><span class="c">    &quot; if there is a line number, go to it </span>
-</span><span class='line'>    <span class="k">if</span> exists<span class="p">(</span><span class="s1">&#39;line_number&#39;</span><span class="p">)</span>
-</span><span class='line'>        exe line_number
-</span><span class='line'>    <span class="k">endif</span>
-</span><span class='line'><span class="k">endfunction</span>
-</span><span class='line'>
-</span><span class='line'>map gf :<span class="k">call</span> GotoFileWithLineNum<span class="p">()&lt;</span>CR<span class="p">&gt;</span>
-</span><span class='line'>map gsf :<span class="k">sp</span><span class="p">&lt;</span>CR<span class="p">&gt;</span>:<span class="k">call</span> GotoFileWithLineNum<span class="p">()&lt;</span>CR<span class="p">&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
+  </section>
 
 </div>
-  
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -391,6 +310,7 @@ initial begin clkn_rstn = 0; repeat(10)@(posedge clkn); # &hellip;">
 
   
 </aside>
+
 
     </div>
   </div>
