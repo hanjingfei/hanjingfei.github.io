@@ -4,7 +4,7 @@
   <title><![CDATA[Jingfei's Blog]]></title>
   <link href="http://hanjingfei.github.io/atom.xml" rel="self"/>
   <link href="http://hanjingfei.github.io/"/>
-  <updated>2016-05-31T10:46:22+08:00</updated>
+  <updated>2016-05-31T12:04:34+08:00</updated>
   <id>http://hanjingfei.github.io/</id>
   <author>
     <name><![CDATA[Jingfei Han]]></name>
@@ -33,6 +33,14 @@
 <p>一些体会。最好每个 module 都自己定义好 TimeScale，尽量避免强制和继承这样的做法，这样出问题容易找到对应的定义在哪里。另外不要过度定义，在允许的范围内，尽量定义成粒度较大的值，避免给仿真器造成不必要的负担，降低整个 design 的仿真速度。仿真速度这个东西，在重要性和紧急性两个维度的事务划分中，最多算是重要不紧急的事情，在成熟固化的设计环境中，想有所提高很困难。</p>
 
 <p>说到仿真速度，在 A 司的时候，还研究了 unit delay 对于仿真速度的影响。根据已有的 paper 显示，不带 unit delay 的仿真速度可以提高多少多少。为了实现这个目标，还重写了 design 中全部的 unit delay 定义。可惜也是没有见到最终的速度比较结果。</p>
+
+<center>欢迎扫描下方二维码关注<b>集成电路</b>个人公众号<em> icsoc </em></center>
+
+
+
+
+<center><img src="http://hanjingfei.github.io/images/qrcode_for_icsoc.jpg" alt="icsoc"/></center>
+
 ]]></content>
   </entry>
   
